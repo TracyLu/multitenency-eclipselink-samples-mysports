@@ -46,7 +46,7 @@ public class AdminPersistenceTesting {
         // Configure the use of embedded derby for the tests allowing system
         // properties of the same name to override
         setProperty(props, PersistenceUnitProperties.JDBC_DRIVER, "com.mysql.jdbc.Driver");
-        setProperty(props, PersistenceUnitProperties.JDBC_URL, "jdbc:mysql://dbserver:3306/mysports");
+        setProperty(props, PersistenceUnitProperties.JDBC_URL, "jdbc:mysql://dbserver:3306/mysports_admin");
         setProperty(props, PersistenceUnitProperties.JDBC_USER, "root");
         setProperty(props, PersistenceUnitProperties.JDBC_PASSWORD, "1q2w3e4r5t");
 //        setProperty(props, PersistenceUnitProperties.JDBC_DRIVER, "org.apache.derby.jdbc.EmbeddedDriver");

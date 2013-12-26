@@ -136,7 +136,7 @@
 							<systemProperties>
 								<property>
 									<name>javax.persistence.jdbc.url</name>
-									<value>jdbc:mysql://dbserver:3306/mysports</value>
+									<value>jdbc:mysql://dbserver:3306/mysports_admin</value>
 								</property>
 								<property>
 									<name>javax.persistence.jdbc.driver</name>

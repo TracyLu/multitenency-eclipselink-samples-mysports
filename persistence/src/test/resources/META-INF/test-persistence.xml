@@ -3,10 +3,10 @@
     <persistence-unit name="test" transaction-type="RESOURCE_LOCAL">
         <provider>eclipselink.example.mysports.persistence.TenantPerEMFProvider</provider>
         <properties>
-           <property name="javax.persistence.jdbc.url" value="jdbc:derby:target/derby/test;create=true"/>
-			<property name="javax.persistence.jdbc.user" value="app"/>
-			<property name="javax.persistence.jdbc.password" value="app"/>
-			<property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.EmbeddedDriver"/>
+           <property name="javax.persistence.jdbc.url" value="jdbc:mysql://dbserver:3306/mysports"/>
+			<property name="javax.persistence.jdbc.user" value="root"/>
+			<property name="javax.persistence.jdbc.password" value="1q2w3e4r5t"/>
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
         </properties>
     </persistence-unit>
 </persistence>
