@@ -49,10 +49,6 @@ public class AdminPersistenceTesting {
         setProperty(props, PersistenceUnitProperties.JDBC_URL, "jdbc:mysql://dbserver:3306/mysports_admin");
         setProperty(props, PersistenceUnitProperties.JDBC_USER, "root");
         setProperty(props, PersistenceUnitProperties.JDBC_PASSWORD, "1q2w3e4r5t");
-//        setProperty(props, PersistenceUnitProperties.JDBC_DRIVER, "org.apache.derby.jdbc.EmbeddedDriver");
-//        setProperty(props, PersistenceUnitProperties.JDBC_URL, "jdbc:derby:target/derby/mysports;create=true");
-//        setProperty(props, PersistenceUnitProperties.JDBC_USER, "app");
-//        setProperty(props, PersistenceUnitProperties.JDBC_PASSWORD, "app");
 
         // Ensure weaving is used
         props.put(PersistenceUnitProperties.WEAVING, "true");
