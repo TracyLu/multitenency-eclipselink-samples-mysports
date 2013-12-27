@@ -42,7 +42,12 @@ public class AdminMetadataSource extends XMLMetadataSource {
         this.connector = connector;
     }
 
-    AdminServerConnector getConnector() {
+    public AdminMetadataSource() {
+		super();
+		this.connector = new RESTAdminServerConnector();
+	}
+
+	AdminServerConnector getConnector() {
         return connector;
     }
 
