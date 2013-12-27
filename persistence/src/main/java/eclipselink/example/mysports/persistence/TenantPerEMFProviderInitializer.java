@@ -34,7 +34,7 @@ import org.eclipse.persistence.logging.SessionLog;
 public class TenantPerEMFProviderInitializer extends JavaSECMPInitializer {
 
     // Indicates whether has been initialized - that could be done only once.
-    protected static boolean isInitialized;
+    protected static volatile boolean isInitialized;
     // Singleton corresponding to the main class loader. Created only if agent
     // is used.
     protected static JavaSECMPInitializer initializer;
