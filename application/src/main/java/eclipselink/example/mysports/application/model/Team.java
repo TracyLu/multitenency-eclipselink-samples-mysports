@@ -35,6 +35,7 @@ import javax.persistence.Version;
 
 import org.eclipse.persistence.annotations.Multitenant;
 import org.eclipse.persistence.annotations.TenantDiscriminatorColumn;
+import org.eclipse.persistence.annotations.VirtualAccessMethods;
 
 import eclipselink.example.mysports.application.MySportsConfig;
 
@@ -42,6 +43,7 @@ import eclipselink.example.mysports.application.MySportsConfig;
 @Table(name = "MYS_TEAM")
 @NamedQueries({ @NamedQuery(name = "Team.findAll", query = "SELECT t FROM Team t ORDER BY t.name"), @NamedQuery(name = "Team.findByDivisionAndName", query = "SELECT t FROM Team t WHERE t.name = :NAME AND t.division.name = :DIV") })
 @Multitenant
+@VirtualAccessMethods
 @TenantDiscriminatorColumn(name = "LEAGUE_ID", contextProperty = MySportsConfig.LEAGUE_CONTEXT, length = 5)
 public class Team implements Extensible {
 
